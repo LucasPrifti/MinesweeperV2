@@ -1,0 +1,159 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    background-image: url('marble.png');
+    background-size: cover;
+    background-position: center;
+}
+#mines-count-input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+}
+#grid-size-input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+}
+#header-image {
+    max-width: 25%; /* Makes the image smaller by limiting its maximum width */
+    max-height: 25%; /* Maintains the aspect ratio of the image */
+    border-radius: 20px; /* Adds rounded corners to the image */
+    display: block;
+    margin: 20px auto 2rem; /* Centers the image and adds space around it */
+    box-shadow: 0 4px 8px rgba(47, 47, 47, 0.2); /* Adds a subtle shadow for depth */
+}
+
+#settings {
+    margin-bottom: 20px;
+}
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px auto;
+    width: 85%; /* Adjust width to control text line length */
+    font-size: 1.75em;
+}
+.content-wrapper {
+    background-color: rgba(177, 170, 170, 0.701); /* Semi-transparent gray */
+    border-radius: 10px; /* Optional: adds rounded corners for a softer look */
+    padding: 20px; /* Adds some space inside the card around your content */
+    margin: 20px auto; /* Centers the card and adds vertical space */
+    max-width: 80%; /* Adjust based on your layout needs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for depth */
+}
+button {
+    background-color: #ffffff; /* Primary button color */
+    padding: 20px 30px; /* Larger padding for bigger button size */
+    font-size: 18px; /* Larger font size for readability */
+    border: none; /* Removes the default border */
+    border-radius: 25px; /* Rounded corners for a softer look */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for color change */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
+    margin: 10px; /* Adds some space around buttons */
+}
+
+button:hover {
+    background-color: #b9b9b9; /* Darker shade on hover for contrast */
+}
+
+header hr {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+hr {
+    border: 2px solid #000000;
+    width: 85%;
+    margin: 20px auto;
+}
+
+#board {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 10px solid rgb(79, 79, 79);
+}
+
+
+#board div {
+    width: 48px; /* Adjust based on actual grid size for responsiveness */
+    height: 48px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.tile-clicked, .mine-found {
+    background-color: darkgrey;
+}
+
+.mine-found {
+    background-color: red;
+}
+
+#flag-button {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=number] {
+    width: 60px;
+}
+
+
+.x1 {
+    color: blue;
+}
+
+.x2 {
+    color: green;
+}
+
+.x3 {
+    color: red;
+}
+
+.x4 {
+    color: navy;
+}
+
+.x5 {
+    color: brown;
+}
+
+.x6 {
+    color: teal;
+}
+
+.x7 {
+    color: black;
+}
+
+.x8 {
+    color: gray;
+}
+
+input[type=number], input[type=color], button {
+    margin: 5px;
+    padding: 5px;
+}

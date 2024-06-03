@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper V.2</title>
+    <link rel="stylesheet" href="minesweeper2.css">
+</head>
+<body>
+    <div class="content-wrapper">
+    <header>
+        <br>
+        <br>
+        <img src="minesweeper2.webp" alt="Minesweeper Image" id="header-image">
+        <h1>Minesweeper V.2</h1>
+        <p>Welcome to Minesweeper V.2! Dive back into this classic game that has been beloved for decades. With a fresh new look and customizable settings, this old classic is ready to provide hours of fun and engaging gameplay. We're excited to bring this game back for both new players and Minesweeper enthusiasts alike.</p>
+        <hr>
+        <h1>How to Play</h1>
+        <p> 💣 Adjust the grid size and mine count to customize your game. 💣<br> <br>
+            💣 Left-click on tiles to reveal what's underneath  💣<br> <br>
+            💣 Right-click to place flags on tiles you suspect contain mines. 💣<br> <br>
+            💣 A number indicates the total count of mines present in the eight surrounding tiles. This information helps you deduce safe tiles to click on next, as well as potential mine locations to flag. 💣<br><br>
+            💣 The goal is to clear the board without detonating any mines. 💣<br> <br>
+            💣💣 Happy sweeping! 💣💣</p>
+        <hr>
+        <br>
+        <br>
+        <h1>Start Playing Here!</h1>
+        <hr>
+    </header>
+    <div id="settings">
+        <label>Mines: <input type="number" id="mines-count-input" value="10" min="1" max="99"></label>
+        <label>Grid Size: <input type="number" id="grid-size-input" value="8" min="5" max="20"></label>
+        <button onclick="updateSettings()">Apply Settings</button>
+        <button onclick="startGame()">Reset Game</button>
+    </div>
+    <h2>Mines: <span id="mines-count">0</span></h2>
+    <div id="board"></div>
+    <br>
+    <h1>Customize Your Layout Below: </h1>
+    <div id="ui-customization">
+        <label>Background Color: <input type="color" id="background-color-input" value="#D3D3D3"></label>
+        <label>Grid Color: <input type="color" id="grid-color-input" value="#8B8989"></label>
+        <label>Tile Color: <input type="color" id="tile-color-input" value="#FFFFFF"></label>
+        <label>Text Color: <input type="color" id="text-color-input" value="#000000"></label>
+        <button onclick="updateUIColor()">Apply UI Color</button>
+        <button onclick="resetStylesToDefault()">Reset Styles to Default</button>
+    </div>
+    <script src="minesweeper2.js"></script>
+    </div>
+</body>
+</html>
